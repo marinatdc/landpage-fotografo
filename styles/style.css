@@ -30,7 +30,11 @@ body, html {
 
 /*HEADER*/
 header {
-    height: 500px; 
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    width: 100%;
+    
 
     background-image: url(images/headimage.jpg);
     background-position: center center; 
@@ -39,19 +43,19 @@ header {
     background-attachment: fixed; 
 }
 
-/*MENU*/
+/*menu*/
 div#menu {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     
-    margin: 0px 10px;
-    padding: 25px 15px;
+    margin: 0px 5px;
+    padding: 20px 0px 0px 0px;
 }
 
 header a {
     text-decoration: none;
-    text-align: center;
+    text-align: center;;
 
     font-weight: bold;
     font-size: 1em;
@@ -69,7 +73,7 @@ span#logo {
     color: white;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.200);
 }
-
+/*botao*/
 a#botao1 {
     background-color: transparent;
 
@@ -81,7 +85,7 @@ a#botao1 {
     text-shadow: none;
     font-weight: normal;
 
-    padding: 5px 12px 5px 12px;    
+    padding: 5px 10px 5px 10px;    
 }
 a#botao1:hover {
     background-color: rgba(255, 255, 255, 0.350);
@@ -104,18 +108,18 @@ a#botao2:hover {
     box-shadow: 1px 1px 15px rgba(97, 0, 0, 0.350);
 }
 
+/*titulo cabeçalho*/
 div#titulocabecalho {
     display: flex;
     justify-content: center; 
     align-items: center;
+    height: calc(80% - 90px);
 
-    font-family: var(--fonte-titulo);
     color: white;
 
-    font-size: 3em;
+    font-family: var(--fonte-titulo);
+    font-size: 2.2em;
     text-align: center;
-    
-    height: calc(80% - 90px);
 }
 
 div#titulocabecalho > h1 {
@@ -125,25 +129,23 @@ div#titulocabecalho > h1 {
 /*MAIN*/
 
 main {
-    /*PENSAR SE É ÚTIL*/
-    display: flex;
+    display: flex; /*pensar se é útil*/
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
+
+    font-size: 1.2em;
 
     padding: 30px 20px 10px 20px;
-    font-size: 1.2em;
 }
-
 main > p {
     text-align: center;
     font-weight: bold;
-    font-family: mont;
+
     margin-bottom: 15px;
-     
 }
 
+/*Apresentação/frase*/
 div#aprensentacao {
     display: flex;
     flex-flow: column nowrap;
@@ -157,25 +159,23 @@ div#aprensentacao {
 }
 
 div#imagem {
-    width: 450px;
-    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 
+    width: 450px;
+    height: 230px;
+    
     border-radius: 15px 15px 0px 0px;
     box-shadow: -1px 5px 20px #310000b0;
 }
-
 div#imagem > img { 
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-
-    
 }
-
 div#aprensentacao > p {
     color: var(--cor0);
 
@@ -184,10 +184,11 @@ div#aprensentacao > p {
     padding-top: 20px;
 }
 
+/*Portifólio*/
 main > h2 {
     align-self: flex-start;
 
-    font-family: 'Playfair Display', serif;
+    font-family: var(--fonte-titulo);
     font-size: 2.1em;
 
     margin: 30px 0px 20px 0px;
@@ -201,10 +202,7 @@ div#portifolio {
 
     border-radius: 30px 30px 0px 0px;
 }
-
 div.caixa {
-    background-color: white;
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -214,29 +212,27 @@ div.caixa {
     padding-bottom: 0px;
     margin: 30px 20px 20px 30px;
     border-radius: 20px;
-}
 
+    background-color: white;
+}
 div.fotos {
-    width: 400px;
-    height: 200px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
+    width: 400px;
+    height: 200px;
     margin:  30px 20px 20px 20px;
-
 
     background-color: #630000;
 }
-
 div.fotos > img { 
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
-
 div.textofotos {
     display: flex;
     flex-flow: column;
@@ -245,30 +241,27 @@ div.textofotos {
 
     margin: 0px 30px 30px 30px;
 }
-
 div.textofotos > h3 {
     margin-bottom: 10px;
-    
 }
-
 div.textofotos > p {
     margin-bottom: 20px;
 
     font-size: .9em;
 }
-
 div.textofotos > a {
-    padding: 11px 20px 11px 20px ;
-    border-radius: 30px;
-
     text-decoration: none;
     text-align: center;
     font-weight: normal;
+
+    padding: 11px 20px 11px 20px ;
+    border-radius: 30px;
 
     background-color: var(--cor3);
     color: white;
 }
 
+/*Serviços*/
 div#servico {
     display: flex;
     flex-flow: column nowrap;
@@ -280,88 +273,77 @@ div#servico {
 
     background-color: var(--cor2);
 }
-
 div#servico > h2 {
-    font-family:'Playfair Display', serif;
+    font-family: var(--fonte-titulo);
     font-size: 3em;
-    
-    
     color: white;
     text-shadow: 0px 7px 6px #380000;
-
+    
     margin-bottom: 30px;
 }
-
 div.planos {
-    background-color: white;
-
     margin: 10px;
     padding: 30px;
+
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0px 3px 11px 3px #380000;
 }
-
 div.planos > h2 {
     margin-bottom: 10px;
 
-    font-family:'Playfair Display', serif;
-    color: var(--cor3);
-
+    font-family: var(--fonte-titulo);
     font-size: 2em;
-
+    
     text-align: center;
-}
 
+    color: var(--cor3);
+}
 div.planos > p {
     text-align: center;
     font-weight: bolder;
-    color: var(--cor3);
     font-size: 1.5em;    
+
+    color: var(--cor3);
 
     margin-bottom: 20px;
 }
-
 div.planos > h3 {
-    color: var(--cor3);
-
     text-align: center;
-}
 
+    color: var(--cor3);
+}
 div.planos > ul {
     list-style-type: none;
 }
-
 div.planos > ul > li {
-    color: var(--cor3);
+    font-size: 1em;
+
     margin-bottom: 10px;
 
-    font-size: 1em;
+    color: var(--cor3);
 }
 
 /*FOOTER*/
-
 footer { 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
-
     margin: -4px 0px 20px 0px;
     border-radius: 20px 20px 0px 0px;
 
     background-color: var(--cor3);
 }
-
 footer > h1 {
     margin-top: 10px;
 
-    font-family:'Playfair Display', serif;
+    font-family:var(--fonte-titulo);
     
     color: var(--cor0);
 
 }
-
 footer > p {
     margin: 5px;
 
