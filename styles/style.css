@@ -144,6 +144,8 @@ main {
 main > p {
     text-align: center;
     font-weight: bold;
+    font-style: italic;
+    font-weight: normal;
 
     margin-bottom: 30px;
 }
