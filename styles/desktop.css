@@ -1,0 +1,47 @@
+@media screen and (min-width: 500px) and (max-width: 1920px)  {
+
+    header {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+
+    div#menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0px 50px;
+    }
+    
+    header a {
+        font-size: 1.1em;
+    }
+
+    a#botao1 {
+        padding: 1px 10px 1px 10px;
+    }
+    
+    a#botao2 {
+        padding: 3px 10px 3px 10px;
+    }
+
+    div#titulocabecalho {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: calc(90% - 90px);
+        font-size: 2.5em;
+    }
+
+    main {
+        font-size: 25px;
+    }
+
+    div#aprensentacao {
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+}

@@ -48,7 +48,6 @@ header {
 div#menu {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     
     margin: 0px 5px;
     padding: 20px 0px 0px 0px;
