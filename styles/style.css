@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    /*CORES*/
+    --cor0: #EDEBDD;
+    --cor1: #810100;
+    --cor2: #630000;
+    --cor3: #1B1717;
+
+    /*FONTES*/
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100vh;
+    width: 100wh;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*HEADER*/
+header {
+    background-image: url(images/headimage.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 500px;
+}
+
+div#menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    margin: 0px 10px;
+    padding: 25px 15px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 1em;
+
+    margin: 5px;
+
+    color: white;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.200);
+}
+
+nav#acessos > a:hover {
+    color: var(--cor1);
+}
+
+span#logo { 
+    color: white;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.200);
+}
+
+a#botao1 {
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.200);
+
+    text-align: center;
+    font-weight: normal;
+    text-shadow: none;
+
+    border-radius: 30px;
+
+    padding: 5px 12px 5px 12px;
+}
+
+a#botao1:hover {
+    background-color: rgba(255, 255, 255, 0.350);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.100);
+}
+
+a#botao2 {
+    background-color: var(--cor2);
+    color: white;
+
+    font-weight: normal;
+    text-shadow: none;
+
+    padding: 7px 10px 7px 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.200);
+}
+
+a#botao2:hover {
+    background-color: #810100;
+    box-shadow: 1px 1px 15px rgba(97, 0, 0, 0.350);
+}
+
+div#titulocabecalho {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+    height: calc(80% - 90px);
+}
+
+div#titulocabecalho > h1 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.500);
+}
+
+/*MAIN*/
+
+main {
+    /*PENSAR SE É ÚTIL*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+
+    padding: 30px 20px 10px 20px;
+    font-size: 1.2em;
+}
+
+main > p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+div#aprensentacao {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor2);
+
+    padding: 25px;
+    margin: 15px -20px 0px -20px;
+}
+
+div#imagem {
+    width: 450px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: -1px 5px 20px #310000b0;
+}
+
+div#imagem > img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+div#aprensentacao > p {
+    color: var(--cor0);
+
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+main > h2 {
+    align-self: flex-start;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1em;
+
+    margin: 30px 0px 20px 0px;
+}
+
+div#portifolio {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: var(--cor0);
+
+    border-radius: 30px 30px 0px 0px;
+}
+
+div.caixa {
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+    margin: 30px 20px 20px 30px;
+    border-radius: 20px;
+}
+
+div.fotos {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
+
+
+    background-color: #630000;
+}
+
+
