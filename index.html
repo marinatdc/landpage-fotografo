@@ -22,15 +22,15 @@
         <div id="header">
             <div id="menu">
                     <nav id="acessos">
-                        <a href="#" >Início</a>
-                        <a href="#" >Portifólio</a>
+                        <a href="#apresentacao" >Início</a>
+                        <a href="#portifolio" >Portifólio</a>
                     </nav>
                     <span id="logo" class="material-symbols-outlined">
                         camera
                     </span>
                     <nav id="botoes">
-                        <a id="botao1" href="#">Serviços</a>
-                        <a id="botao2" href="#">Contato</a>
+                        <a id="botao1" href="#servico">Serviços</a>
+                        <a id="botao2" href="#footer">Contato</a>
                     </nav>
             </div>
         </div>
@@ -48,7 +48,7 @@
 
         <div id="aprensentacao">
             <div id="imagem">
-                <img src="styles/images/imagem_fotografa.jpg"alt="Imagem da fotógrafa">
+                <img src="styles/images/fotografa.jpg"alt="Imagem da fotógrafa">
             </div>
             <p>
                 Sou fotógrafa <strong>especializada em casamentos e ensaios</strong> e amo capturar momentos únicos com sensibilidade e autenticidade. Meu objetivo é contar histórias por meio das imagens, valorizando cada detalhe e transformando instantes especiais em lembranças inesquecíveis.
@@ -59,34 +59,34 @@
 
         <div id="portifolio">
             <div class="caixa">
-                <div class="fotos"><img src="#" alt="f1"></div>
+                <div class="fotos"><img src="styles/images/wedding.jpg" alt="casamento"></div>
                 <div class="textofotos">
                     <h3>Casamentos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam odit non harum pariatur deserunt blanditiis corrupti ad.</p>
+                    <p>"Capturando a essência de cada momento especial, desde os olhares apaixonados até os detalhes mais sutis. Busco contar a história do casal de forma autêntica, com fotos espontâneas, cheias de emoção e elegância. Cada imagem reflete a beleza e a magia desse dia inesquecível"</p>
                     <a href="#">Saiba mais</a>
                 </div>
             </div>
             <div class="caixa">
-                <div class="fotos"><img src="#" alt="f2"></div>
+                <div class="fotos"><img src="styles/images/fifteen.jpg" alt="15 anos"></div>
                 <div class="textofotos">
                     <h3>15 anos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur mollitia minus quisquam aperiam nam similique.</p>
+                    <p>"15 anos é cheio de cor, brilho e momentos inesquecíveis! Busco capturar toda a alegria, a emoção e a personalidade da debutante, desde os ensaios até a grande noite. Com fotos espontâneas e criativas, transformo cada instante em uma lembrança única e especial."</p>
                     <a href="#">Saiba mais</a>
                 </div>
             </div>
             <div class="caixa">
-                <div class="fotos"><img src="#" alt="f3"></div>
+                <div class="fotos"><img src="styles/images/party.jpg" alt="festa"></div>
                 <div class="textofotos">
                     <h3>Eventos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam molestias consequatur dolores voluptates enim aut.</p>
+                    <p>"Registro cada detalhe com autenticidade e dinamismo. Seja um aniversário, formatura, corporativo ou qualquer outra celebração, capturo momentos espontâneos e expressivos, garantindo fotos que transmitam a energia e a essência de cada ocasião."</p>
                     <a href="#">Saiba mais</a>
                 </div>
             </div>
             <div class="caixa">
-                <div class="fotos"><img src="#" alt="f4"></div>
+                <div class="fotos"><img src="styles/images/product.jpg" alt="produtos"></div>
                 <div class="textofotos">
                     <h3>Produtos</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe repellendus autem provident animi aperiam placeat totam ab qui quam fuga!</p>
+                    <p>"Em produtos foco em capturar cada detalhe com precisão e estética. Com iluminação e composição estratégicas, realço a qualidade e os diferenciais de cada item, criando imagens que valorizam sua marca e despertam o interesse do público."</p>
                     <a href="#">Saiba mais</a>
                 </div>
             </div>
@@ -136,11 +136,38 @@
     </main>
 
     <!--FOOTER-->
-    <footer>
+    <footer id="footer">
+
         <h1>Contato</h1>
-        <p>telefone: (xx) xxxx-xxxx</p>
-        <p>email: xxxxxxxxxxx@gmail.com</p>
-        <p>instagram: @xxx_xxxx</p>
+        <div id="logofooter">
+            <span id="logo" class="material-symbols-outlined">
+                camera
+            </span>
+            <h1>Eventely Works</h1>
+        </div>
+
+        <div id="information">
+            <div id="email" class="info">
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+                <p>email: xxxxxxxxxxx@gmail.com</p>
+            </div>
+            <div id="phone" class="info">
+                <span class="material-symbols-outlined">
+                    smartphone
+                    </span>
+                <p>telefone: (xx) xxxx-xxxx</p>
+            </div>
+            <div id="insta" class="info">
+                <span class="material-symbols-outlined">
+                    alternate_email
+                    </span>
+                <p>instagram: @xxx_xxxx</p>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5809.0920106140975!2d-51.12594072027487!3d-30.033794433664383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519763cac2bb605%3A0x43dd87263dead867!2sInternational%20Universities%20laureate%2C%20UniRitter%20(APF%20Campus)!5e0!3m2!1sen!2sbr!4v1740746250677!5m2!1sen!2sbr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
 </body>

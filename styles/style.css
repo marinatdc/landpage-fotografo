@@ -334,6 +334,7 @@ footer {
 
     margin: -4px 0px 20px 0px;
     border-radius: 20px 20px 0px 0px;
+    padding-bottom: 20px;
 
     background-color: var(--cor3);
 }
@@ -345,8 +346,39 @@ footer > h1 {
     color: var(--cor0);
 
 }
-footer > p {
-    margin: 5px;
 
-    color: var(--cor0);
+#logofooter, #email, #phone, #insta {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
+#logofooter > span {
+    color: darkgray;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+#logofooter > h1 {
+    color: darkgray;
+
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+
+    margin: 10px 0px;
+}
+
+.info {
+    color: var(--cor0);
+    margin: 10px 0px;
+
+    font-size: 1.2em;
+}
+
+.info > span {
+    margin-right: 5px;
+}
+
+
+
